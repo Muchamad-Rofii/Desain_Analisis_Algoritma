@@ -13,14 +13,13 @@ void bubblesort(int arr[], int n){
 		}
 	}
 }
-
 int main (){
 	int array [100], n, i, j;
 	cout<<"masukan banyak elemen: ";
 	cin>>n;
-	cout<<"masukan nilai: \n";
 	
 	for (i = 0; i<n; i++){
+		cout<<"masukan nilai: ";
 		cin>>array[i];
 	}
 	

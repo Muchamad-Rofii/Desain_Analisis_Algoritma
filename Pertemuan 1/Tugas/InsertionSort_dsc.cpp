@@ -17,20 +17,22 @@ int main (){
 	}
 	for (int i=1; i<y; i++){
 		int key = x[i];
-		int j = i+1;
-		while (j>=0 && x[j] > key){
+		int j = i-1;
+		while(j>=0 && x[j] < key){
 			x[j+1] = x[j];
 			j--;
 		}
 		x[j+1] = key;
 		cout << "Proses dalam pernyortiran" << endl;
 		for (int m=0;m<y;m++){
-			cout << x[m] << " ";
+			cout << x[m] << ' ';
 		}
 		cout << endl;
 	}
-	cout << "\nOutput:" << endl;
+	cout << "Output:" << endl;
 	for (int m=0;m<y;m++){
-		cout << x[m] << " ";
+		cout << x[m] << ' ';
 	}
+	
+	return 0;
 }

@@ -5,14 +5,14 @@ void selectionSort(int arr[], int n);
 
 int main (){
 	int n, i;
-	cout << "masukan jumlah elemen : ";
+	cout << "Masukan jumlah elemen : ";
 	cin >> n;
 	int arr[n];
 	
 	cout<<endl;
 	
 	for (i = 0; i < n; i++){
-		cout << "masukan nilai elemen : ";
+		cout << "Masukan nilai elemen : ";
 		cin >> arr[i];
 	}
 	
@@ -41,7 +41,7 @@ void selectionSort (int arr[], int n) {
 		temp = arr[Indeks_Terbesar];
 		arr[Indeks_Terbesar] = arr[i];
 		arr[i] = temp;
-		cout << "iterasi ke-" << i+1 << ": ";
+		cout << "Iterasi ke-" << i+1 << ": ";
 		for (int k = 0; k < n; k++){
 			cout << arr[k] << " ";
 		}
